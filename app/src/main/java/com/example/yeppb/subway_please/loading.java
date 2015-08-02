@@ -39,6 +39,6 @@ public class loading extends AppCompatActivity {
 
     public int gyu()
     {
-        return 27;
+        return 25;
     }
 }
