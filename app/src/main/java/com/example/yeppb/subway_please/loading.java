@@ -34,4 +34,9 @@ public class loading extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public int gyu()
+    {
+        return 27;
+    }
 }
