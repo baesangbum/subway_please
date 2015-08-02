@@ -15,5 +15,10 @@
             android:name=".JoinActivity"
             android:label="@string/title_activity_join" >
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="main" >
+        </activity>
     </application>
+
 </manifest>
