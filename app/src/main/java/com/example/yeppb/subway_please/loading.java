@@ -31,6 +31,7 @@ public class loading extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+        int a = 10;
 
         return super.onOptionsItemSelected(item);
     }
