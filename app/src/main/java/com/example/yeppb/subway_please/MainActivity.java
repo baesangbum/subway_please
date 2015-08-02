@@ -1,6 +1,5 @@
 package com.example.yeppb.subway_please;
 
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -9,14 +8,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class subway_mainActivity extends AppCompatActivity implements OnClickListener {
+public class MainActivity extends AppCompatActivity implements OnClickListener {
     Button btnComm;
     Button btnMin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_subway_main);
+        setContentView(R.layout.activity_main);
 
         btnComm = (Button)findViewById(R.id.btnComm);
         btnMin = (Button)findViewById(R.id.btnMin);
