@@ -12,115 +12,118 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView"
+        android:text="아이디"
+        android:id="@+id/lblId"
+        android:layout_marginTop="106dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="105dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/textView5"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="@dimen/abc_action_bar_content_inset_material" />
+        android:layout_alignEnd="@+id/lblPassword" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:layout_marginLeft="@dimen/abc_action_bar_content_inset_material"
         android:ems="10"
-        android:id="@+id/editText"
-        android:layout_above="@+id/textView2"
-        android:layout_toEndOf="@+id/textView" />
+        android:id="@+id/txtId"
+        style="@style/AppTheme"
+        android:layout_alignBottom="@+id/lblId"
+        android:layout_toEndOf="@+id/lblId"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="비밀번호"
+        android:id="@+id/lblPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lblId"
+        android:layout_alignEnd="@+id/lblCheckPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="비밀번호 확인"
+        android:id="@+id/lblCheckPassword"
+        android:layout_below="@+id/lblPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_toEndOf="@+id/textView2" />
+        android:id="@+id/txtPassword"
+        android:layout_above="@+id/lblCheckPassword"
+        android:layout_alignStart="@+id/txtId" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtCheckPassword"
+        android:layout_alignBottom="@+id/lblCheckPassword"
+        android:layout_alignStart="@+id/txtPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="성   명"
+        android:id="@+id/lblName"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/txtId" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_alignBottom="@+id/lblName"
+        android:layout_alignStart="@+id/txtCheckPassword" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText4"
-        android:layout_below="@+id/editText3"
-        android:layout_toEndOf="@+id/textView4" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/editText5"
-        android:layout_below="@+id/editText4"
-        android:layout_toEndOf="@+id/textView5" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="이메일"
+        android:id="@+id/lblPhone"
+        android:layout_below="@+id/lblName"
+        android:layout_toStartOf="@+id/txtId"
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/editText5"
-        android:layout_toEndOf="@+id/textView6" />
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/lblPhone"
+        android:layout_alignStart="@+id/editText3" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:id="@+id/btnCommit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:id="@+id/btnCancle"/>
+    </LinearLayout>
+
 </RelativeLayout>
