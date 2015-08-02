@@ -32,6 +32,7 @@ public class loading extends AppCompatActivity {
             return true;
         }
         int a = 10;
+        int sangbum = 10;
 
         return super.onOptionsItemSelected(item);
     }
