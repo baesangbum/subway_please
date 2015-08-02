@@ -40,4 +40,9 @@ public class loading extends AppCompatActivity {
         int sangbum = 100;
         return sangbum - 25;
     }
+
+    public int test()
+    {
+        return 18;
+    }
 }
