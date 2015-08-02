@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
     Button btnComm;
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-
+        //if(v.getId().value == btnComm) {
+            Toast.makeText(MainActivity.this, "1번", Toast.LENGTH_SHORT).show();
+        //}
     }
 }
