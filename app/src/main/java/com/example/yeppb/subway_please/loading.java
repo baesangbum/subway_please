@@ -37,6 +37,7 @@ public class loading extends AppCompatActivity {
 
     public int gyu()
     {
+        int sangbum = 100;
         return 25;
     }
 }
